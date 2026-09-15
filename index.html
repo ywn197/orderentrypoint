@@ -10,7 +10,7 @@
     const query = window.location.search; // 先頭の ? を含むクエリ文字列
 
     // クエリが存在する場合だけ末尾に付けて遷移
-    if (query && !(["/",".","http","https"].some(keyword => text.includes(keyword))) ) {
+    if (query && !(["/",".","http","https"].some(keyword => query.includes(keyword))) ) {
       location.href = URL + query;
     }
   </script>
