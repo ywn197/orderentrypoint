@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirect</title>
+</head>
+<body>
+  <script>
+    const URL = 'https://example.com/destination';
+    const query = window.location.search; // 先頭の ? を含むクエリ文字列
+
+    // クエリが存在する場合だけ末尾に付けて遷移
+    if (query && !(["/",".","http","https"].some(keyword => text.includes(keyword))) ) {
+      location.href = URL + query;
+    }
+  </script>
+</body>
+</html>
